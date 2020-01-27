@@ -15,9 +15,7 @@ public class EquilateralTriangle extends Triangle {
 
     @Override
     public double getArea() {
-        double perimeter = 3 * a;
-        double s = perimeter / 2.0;
-        double area = Math.round(Math.sqrt((s * (s-a) * (s-a) * (s-a))));
+        double area = ((Math.sqrt(3))/4) * Math.pow(a,2);
         return area;
     }
 }

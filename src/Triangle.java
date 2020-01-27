@@ -8,7 +8,7 @@ public class Triangle extends Shape {
     public double getArea() {
         double perimeter = a + b + c;
         double s = perimeter / 2.0;
-        double area = Math.round(Math.sqrt((s * (s-a) * (s-b) * (s-c))));
+        double area = Math.sqrt((s * (s-a) * (s-b) * (s-c)));
         return area;
     }
 

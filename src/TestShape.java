@@ -14,5 +14,10 @@ public class TestShape {
         triangle.setDimensions(4.0, 5.0, 6.0);
         System.out.println(triangle.getName() + ": Dimensions: "
                 + triangle.printDimensions() + " Area: " + triangle.getArea());
+
+        EquilateralTriangle eqTriangle = new EquilateralTriangle("equilateral triangle");
+        eqTriangle.setDimensions(4.0);
+        System.out.println(eqTriangle.getName() + ": Dimensions: "
+                + eqTriangle.printDimensions() + " Area: " + eqTriangle.getArea());
     }
 }
