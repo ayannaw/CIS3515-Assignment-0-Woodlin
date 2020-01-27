@@ -27,11 +27,11 @@ public class TestShape {
         System.out.println("-----------------------------");
 
         Triangle triangle = new Triangle("triangle");
-        System.out.print("Enter side 1: ");
+        System.out.print("Enter side 1 for " + triangle.getName() + ": ");
         double a = input.nextDouble();
-        System.out.print("Enter side 2: ");
+        System.out.print("Enter side 2 for " + triangle.getName() + ": ");
         double b = input.nextDouble();
-        System.out.print("Enter side 3: ");
+        System.out.print("Enter side 3 for " + triangle.getName() + ": ");
         double c = input.nextDouble();
         triangle.setDimensions(a,b,c);
         System.out.println(triangle.getName());
@@ -41,12 +41,14 @@ public class TestShape {
         System.out.println("-----------------------------");
 
         EquilateralTriangle equilateralTriangle = new EquilateralTriangle("equilateral triangle");
-        System.out.print("Enter side for " + equilateralTriangle.getName());
+        System.out.print("Enter side for " + equilateralTriangle.getName() + ": ");
         double eqSide = input.nextDouble();
         equilateralTriangle.setDimensions(eqSide);
         System.out.println(equilateralTriangle.getName());
         System.out.println(equilateralTriangle.printDimensions());
         System.out.println("Area: " + equilateralTriangle.getArea());
+
+
         /*System.out.println(square1.getName() + ": Dimensions: "
                 + square1.printDimensions() + " Area: " + square1.getArea());
 
