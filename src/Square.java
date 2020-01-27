@@ -10,4 +10,14 @@ public class Square extends Shape {
         this.width = width;
     }
 
+    @Override
+    public double getArea() {
+       double area = length * width;
+        return area;
+    }
+
+    @Override
+    public String printDimensions() {
+        return "Length: " + length + " Width: " + width;
+    }
 }
