@@ -32,13 +32,13 @@ public class TestShape2 {
             }
             else if (option.equalsIgnoreCase("E")) {
                 shapeCount++;
-                CreateSquare();
+                CreateEquilateralTriangle();
                 System.out.println("-----------------------------");
             }
             else {
                 System.out.println("Not an Option...");
-                System.out.println("Enter S: Square, C: Circle, T: Triangle, E: Equilateral Triangle, " +
-                        "Q: Quit");
+//                System.out.println("Enter S: Square, C: Circle, T: Triangle, E: Equilateral Triangle, " +
+//                        "Q: Quit");
             }
 
         }
